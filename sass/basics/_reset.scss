@@ -1,0 +1,34 @@
+// co tak właściwie tu powinno się znaleźć? - ?? 
+
+*,
+*::before,
+*::after {
+	outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--main-text-color);
+}
+
+img,
+svg {
+	vertical-align: middle;
+}
+
+ul {
+	list-style-type: none;
+}
+

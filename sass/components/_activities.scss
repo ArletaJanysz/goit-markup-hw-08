@@ -1,0 +1,35 @@
+/* ACTIVITIES */
+
+.activities {
+	display: flex;
+	list-style-type: none;
+	gap: 30px;
+
+	&__item {
+		position: relative;
+	}
+
+	&__overlay {
+		display: flex;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 70px;
+		background: rgba(47, 48, 58, 0.8);
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__text {
+		display: flex;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.143px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: var(--brand-white-color);
+		opacity: 1;
+		text-align: center;
+	}
+}
