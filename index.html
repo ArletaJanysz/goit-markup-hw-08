@@ -55,6 +55,87 @@
 						+48 111 111 111</a
 					>
 				</div>
+
+				<!-- BURGER MOBILE -->
+				<button
+					class="menu-toggle js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu">
+					<svg class="hamburger__icon" width="40" height="40">
+						<use href="./images/icons.svg#icon-menu_40px"></use>
+					</svg>
+				</button>
+
+				<!-- /MENU MOBILE -->
+				<div class="hamburger js-menu-container" id="mobile-menu">
+					<button class="menu-toggle js-close-menu">
+						<svg class="hamburger__icon" width="40" height="40">
+							<use href="images/icons.svg#icon-close-black"></use>
+						</svg>
+					</button>
+
+					<div class="hamburger__content">
+						<ul class="hamburger__list">
+							<li class="hamburger__item">
+								<a href="index.html" class="hamburger__link">Agencja</a>
+							</li>
+							<li class="hamburger__item">
+								<a href="portfolio.html" class="hamburger__link">Portfolio</a>
+							</li>
+							<li class="hamburger__item">
+								<a href="#" class="hamburger__link">Kontakt</a>
+							</li>
+						</ul>
+
+						<div class="hamburger__contacts">
+							<span class="hamburger__tel">
+								<a
+									href="tel:+48111111111"
+									class="hamburger__tel hamburger__tel--link"
+									>+48 111 111 111</a
+								>
+							</span>
+							<span class="hamburger__mail">
+								<a
+									href="mailto:info@devstudio.com"
+									class="hamburger__mail hamburger__mail--link"
+									>info@devstudio.com</a
+								>
+							</span>
+
+							<ul class="hamburger__socials">
+								<li class="hamburger__socials hamburger__socials--item">
+									<a
+										class="hamburger__socials hamburger__socials--link"
+										href="#"
+										>Instagram</a
+									>
+								</li>
+								<li class="hamburger__socials hamburger__socials--item">
+									<a
+										class="hamburger__socials hamburger__socials--link"
+										href="#"
+										>Twitter</a
+									>
+								</li>
+								<li class="hamburger__socials hamburger__socials--item">
+									<a
+										class="hamburger__socials hamburger__socials--link"
+										href="#"
+										>Facebook</a
+									>
+								</li>
+								<li class="hamburger__socials hamburger__socials--item">
+									<a
+										class="hamburger__socials hamburger__socials--link"
+										href="#"
+										>LinkedIn</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -123,6 +204,9 @@
 						<li class="activities__item">
 							<img
 								src="images/Programowanie_komputerowe.jpg"
+								srcset="images/Programowanie_komputerowe.jpg 370px
+								images/Programowanie_komputerowe@2x.jpg 740px,
+								images/Programowanie_komputerowe@2x.jpg 1110px"
 								alt="Programowanie komputerowe"
 								width="370"
 								height="294" />
@@ -134,6 +218,9 @@
 						<li class="activities__item">
 							<img
 								src="images/Programowanie_aplikacji_na_smartfon.jpg"
+								srcset="images/Programowanie_aplikacji_na_smartfon.jpg 370px
+								images/Programowanie_aplikacji_na_smartfon@2x.jpg 740px,
+								images/Programowanie_aplikacji_na_smartfon@3x.jpg 1110px"
 								alt="Programowanie aplikacji na smartfon"
 								width="370"
 								height="294" />
@@ -145,6 +232,9 @@
 						<li class="activities__item">
 							<img
 								src="images/Design_internetowy.jpg"
+								srcset="images/Design_internetowy.jpg 370px
+								images/Design_internetowy@2x.jpg 740px,
+								images/Design_internetowy@3x.jpg 1110px"
 								alt="Design internetowy"
 								width="370"
 								height="294" />
@@ -154,7 +244,7 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section>0
 
 			<section class="members section">
 				<div class="container">
@@ -164,6 +254,11 @@
 							<img
 								src="images/JohnDoe1.jpg"
 								alt="John Doe1"
+								srcset="
+									images/JohnDoe1.jpg    270w,
+									images/JohnDoe1@2x.jpg 540w,
+									images/JohnDoe1@3x.jpg 810w
+								"
 								width="270"
 								height="260" />
 							<div class="member__card">
@@ -204,6 +299,11 @@
 						<li class="member">
 							<img
 								src="images/JohnDoe2.jpg"
+								srcset="
+									images/JohnDoe2.jpg    270w,
+									images/JohnDoe2@2x.jpg 540w,
+									images/JohnDoe2@3x.jpg 810w
+								"
 								alt="John Doe2"
 								width="270"
 								height="260" />
@@ -245,6 +345,11 @@
 						<li class="member">
 							<img
 								src="images/JohnDoe3.jpg"
+								srcset="
+									images/JohnDoe3.jpg    270w,
+									images/JohnDoe3@2x.jpg 540w,
+									images/JohnDoe3@3x.jpg 810w
+								"
 								alt="John Doe3"
 								width="270"
 								height="260" />
@@ -286,6 +391,11 @@
 						<li class="member">
 							<img
 								src="images/JohnDoe4.jpg"
+								srcset="
+									images/JohnDoe4.jpg    270w,
+									images/JohnDoe4@2x.jpg 540w,
+									images/JohnDoe4@3x.jpg 810w
+								"
 								alt="John Doe4"
 								width="270"
 								height="260" />
@@ -515,6 +625,13 @@
 			</div>
 		</div>
 
-		<script src="./modal.js"></script>
+		<script src="./js./modal.js"></script>
+		<!-- script for mobile menu -->
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>
