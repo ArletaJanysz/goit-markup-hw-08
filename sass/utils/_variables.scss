@@ -15,3 +15,11 @@
 
 $primary-font-family: "Roboto", sans-serif;
 $secondary-font-family: "Raleway", sans-serif;
+
+$tablet {
+	min-width: 768px;
+}
+
+$desktop: {
+	min-width: 1200px;
+}
