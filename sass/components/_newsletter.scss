@@ -16,7 +16,9 @@
 			margin-top: 0;
 		}
 
-		
+		@include desktop {
+			// margin-top: 5px;
+		}
 	}
 
 	&__input-wrapper {
@@ -24,7 +26,10 @@
 		flex-direction: column;
 		gap: 20px;
 
-		
+		@include desktop {
+			flex-direction: row;
+			max-height: 50px;
+		}
 	}
 
 	&__input {
@@ -36,7 +41,9 @@
 		border-radius: 4px;
 		max-width: 450px;
 
-		
+		@include desktop {
+			width: 358px;
+		}
 	}
 
 	&__btn {

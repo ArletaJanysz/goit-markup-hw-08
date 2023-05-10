@@ -9,6 +9,7 @@
 	@include desktop {
 		gap: 30px;
 		flex-wrap: nowrap;
+		justify-content: center;
 	}
 
 	&__logo {

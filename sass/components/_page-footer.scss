@@ -13,6 +13,12 @@
 			justify-content: space-around;
 			flex-wrap: wrap;
 		}
+
+		@include desktop {
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: unset;
+		}
 	}
 }
 
@@ -54,6 +60,11 @@
 		@include tablet {
 			margin-top: 12px;
 			margin-bottom: 20px;
+		}
+
+		@include desktop {
+			margin-top: 12px;
+			margin-bottom: 12px;
 		}
 	}
 

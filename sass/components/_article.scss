@@ -9,6 +9,11 @@
 		gap: 30px;
 	}
 
+	@include desktop {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
 	&__icons {
 		width: 450px;
 		height: 120px;
@@ -19,6 +24,10 @@
 
 		@include tablet {
 			width: 354px;
+		}
+		
+		@include desktop {
+			width: 270px;
 		}
 	}
 
@@ -47,11 +56,11 @@
 		@include tablet {
 			max-width: 354px;
 		}
+
+		@include desktop {
+			max-width: 354px;
+		}
 	}
 
-	@include desktop {
-		display: flex;
-		gap: 30px;
-		margin-bottom: -94px;
-	}
+
 }
