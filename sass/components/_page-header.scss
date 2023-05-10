@@ -5,52 +5,56 @@
 		padding: 10px 0;
 		gap: 93px;
 
-		@include tablet {
-			padding: 21px 15px 21px 0px;
+		@include desktop {
+			padding: 24px 0 25px;
 		}
 	}
+}
 
-	&__container {
+&__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include tablet {
+		justify-content: unset;
+	}
+
+	@include desktop {
+		justify-content: unset;
+	}
+
+	// @include desktop {
+	// 	padding-top: 25px;
+	// 	padding-bottom: 25px;
+	// }
+}
+
+&__menu {
+	display: none;
+
+	@include tablet {
 		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-		@include tablet {
-			justify-content: unset;
-		}
-
-		// @include desktop {
-		// 	padding-top: 25px;
-		// 	padding-bottom: 25px;
-		// }
 	}
+}
 
-	&__menu {
+&__mobile-btn {
+	min-height: 40px;
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+
+	@include tablet {
 		display: none;
-
-		@include tablet {
-			display: flex;
-		}
-	}
-
-	&__mobile-btn {
-		min-height: 40px;
-		min-width: 40px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		margin: 0;
-		padding: 0;
-		background-color: transparent;
-		cursor: pointer;
-		border: none;
-		border-radius: 50%;
-		outline: none;
-
-		@include tablet {
-			display: none;
-		}
 	}
 }
 
@@ -60,6 +64,10 @@
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+
+	@include tablet {
+		margin-right: 101px;
+	}
 
 	&__list {
 		display: flex;
@@ -106,7 +114,6 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 10px;
-		padding: 0 15px;
 	}
 
 	&__link {

@@ -10,6 +10,11 @@
 	padding: 118px 0;
 	max-height: 400px;
 
+	@include tablet {
+		padding: 200px 0;
+		background-size: auto;
+	}
+
 	@include desktop {
 		padding: 200px 0;
 		background-size: auto;
@@ -25,6 +30,12 @@
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: var(--brand-white-color);
+
+		@include tablet {
+			padding: 202px;
+			font-size: 26px;
+			line-height: 1.615;
+		}
 
 		@include desktop {
 			padding: 0 252px;
