@@ -1,3 +1,15 @@
+@include tablet {
+	.burger__mobile-hide {
+		display:none;
+	}
+}
+
+@include desktop {
+	.burger__mobile-hide {
+		display:none;
+	}
+}
+
 .menu {
 	padding: 8px;
 	text-decoration: none;

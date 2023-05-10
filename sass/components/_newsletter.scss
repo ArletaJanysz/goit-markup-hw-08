@@ -12,10 +12,11 @@
 		text-transform: uppercase;
 		margin: 60px 0 20px;
 
-		@include desktop {
-			justify-content: unset;
-			margin: 12px 0 20px;
+		@include tablet {
+			margin-top: 0;
 		}
+
+		
 	}
 
 	&__input-wrapper {
@@ -23,10 +24,7 @@
 		flex-direction: column;
 		gap: 20px;
 
-		@include desktop {
-			flex-direction: row;
-			gap: 12px;
-		}
+		
 	}
 
 	&__input {
@@ -38,10 +36,7 @@
 		border-radius: 4px;
 		max-width: 450px;
 
-		@include desktop {
-			max-width: 358px;
-			padding: 15px 295px 15px 16px;
-		}
+		
 	}
 
 	&__btn {

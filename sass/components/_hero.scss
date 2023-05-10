@@ -8,11 +8,10 @@
 	background-size: cover;
 	text-align: center;
 	padding: 118px 0;
-	max-height: 400px;
+	// max-height: 400px;
 
 	@include tablet {
-		padding: 200px 0;
-		background-size: auto;
+		padding: 118px 0;
 	}
 
 	@include desktop {
@@ -32,9 +31,9 @@
 		color: var(--brand-white-color);
 
 		@include tablet {
-			padding: 202px;
 			font-size: 26px;
 			line-height: 1.615;
+			padding: 0 185px;
 		}
 
 		@include desktop {
@@ -55,6 +54,14 @@
 		padding: 10px 41px 10px 42px;
 		font-family: "Roboto", sans-serif;
 		cursor: pointer;
+
+		@include tablet {
+			margin-bottom: 118px;
+		}
+
+		@include desktop {
+			margin-bottom: 200px;
+		}
 	}
 }
 
