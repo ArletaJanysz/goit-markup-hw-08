@@ -5,8 +5,13 @@
 
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
 		justify-content: center;
+
+		@include desktop {
+			flex-wrap: nowrap;
+		}
 	}
 }
 
@@ -17,6 +22,21 @@
 	border-radius: 0px 0px 4px 4px;
 	border: 0 solid var(--card-box-border-color);
 	text-align: center;
+	width: 450px;
+
+	@include tablet {
+		width: 354px;
+	}
+
+	@include desktop {
+		width: 270px;
+	}
+
+	& > img {
+		vertical-align: middle;
+		width: 100%;
+		height: auto;
+	}
 
 	&__card {
 		padding: 30px 32px;
@@ -43,6 +63,8 @@
 		display: flex;
 		flex-direction: row;
 		gap: 10px;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__socials-link {

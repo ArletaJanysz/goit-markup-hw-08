@@ -3,34 +3,52 @@
 .newsletter {
 	&__header {
 		display: flex;
+		justify-content: center;
 		color: var(--brand-white-color);
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.1428;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
-		margin: 12px 0 20px;
+		margin: 60px 0 20px;
+
+		@include desktop {
+			justify-content: unset;
+			margin: 12px 0 20px;
+		}
 	}
 
 	&__input-wrapper {
 		display: flex;
-		flex-direction: row;
-		gap: 12px;
+		flex-direction: column;
+		gap: 20px;
+
+		@include desktop {
+			flex-direction: row;
+			gap: 12px;
+		}
 	}
 
 	&__input {
-		padding: 15px 295px 15px 16px;
+		padding: 15px 387px 15px 16px;
 		color: var(--brand-white-color);
 		background-color: transparent;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 		border-radius: 4px;
-		max-width: 358px;
+		max-width: 450px;
+
+		@include desktop {
+			max-width: 358px;
+			padding: 15px 295px 15px 16px;
+		}
 	}
 
 	&__btn {
 		display: flex;
 		align-items: center;
+		text-align: center;
+
 		background: var(--active-color);
 		color: var(--brand-white-color);
 		font-weight: 700;
@@ -43,6 +61,7 @@
 		cursor: pointer;
 		gap: 24px;
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		margin: 0 auto;
 
 		& > .newsletter__icon {
 			fill: var(--brand-white-color);

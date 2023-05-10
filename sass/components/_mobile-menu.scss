@@ -3,18 +3,18 @@
 	border: none;
 }
 
-@media screen and (max-width: 767px) {
-	.menu,
-	.contact {
-		display: none;
-	}
-}
+// @media screen and (max-width: 767px) {
+// 	.menu,
+// 	.contact {
+// 		display: none;
+// 	}
+// }
 
-@media screen and (min-width: 768px) {
-	.menu-toggle {
-		display: none;
-	}
-}
+// @media screen and (min-width: 768px) {
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+// }
 
 .hamburger {
 	position: fixed;

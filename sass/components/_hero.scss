@@ -5,8 +5,10 @@
 		linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	text-align: center;
-	padding: 200px 0;
+	padding: 118px 0;
+	max-height: 400px;
 
 	@include desktop {
 		padding: 200px 0;
@@ -15,18 +17,19 @@
 
 	&__title {
 		display: flex;
-		padding: 0 252px;
+		padding: 30px;
 		margin-bottom: 30px;
 		font-weight: 900;
-		font-size: 44px;
-		line-height: 1.3636;
+		font-size: 26px;
+		line-height: 1.615;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
 		color: var(--brand-white-color);
 
 		@include desktop {
-			width: 696px;
-			@include font($fw: 900, $fs: 44px, $lh: 60px, $ls: 0.06em);
+			padding: 0 252px;
+			font-size: 44px;
+			line-height: 1.3636;
 		}
 	}
 

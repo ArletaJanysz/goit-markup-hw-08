@@ -2,25 +2,58 @@
 	&__wrapper {
 		border-bottom: 1px solid var(--border-bottom-color);
 		background-color: var(--bg-color);
-		padding: 24px 0 25px;
+		padding: 10px 0;
 		gap: 93px;
+
+		@include tablet {
+			padding: 21px 15px 21px 0px;
+		}
 	}
 
 	&__container {
 		display: flex;
-		align-items: baseline;
+		align-items: center;
+		justify-content: space-between;
 
-		// @include tablet {
-		// 	padding-top: 20px;
-		// 	padding-bottom: 20px;
-		// }
+		@include tablet {
+			justify-content: unset;
+		}
 
 		// @include desktop {
 		// 	padding-top: 25px;
 		// 	padding-bottom: 25px;
 		// }
 	}
+
+	&__menu {
+		display: none;
+
+		@include tablet {
+			display: flex;
+		}
+	}
+
+	&__mobile-btn {
+		min-height: 40px;
+		min-width: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		margin: 0;
+		padding: 0;
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+		border-radius: 50%;
+		outline: none;
+
+		@include tablet {
+			display: none;
+		}
+	}
 }
+
 .nav {
 	display: flex;
 	font-weight: 500;
@@ -34,7 +67,7 @@
 		gap: 46px;
 		text-decoration: none;
 		color: var(--brand-black-color);
-		margin-left: 93px;
+		margin-left: 83px;
 	}
 
 	&__link {
@@ -66,8 +99,15 @@
 
 .contact {
 	display: flex;
-	justify-content: end;
 	gap: 30px;
+	flex-direction: column;
+
+	@include tablet {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+		padding: 0 15px;
+	}
 
 	&__link {
 		display: flex;

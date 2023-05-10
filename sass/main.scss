@@ -1,5 +1,7 @@
 @import "utils/variables";
 
+@import "utils/mixins";
+
 @import "basics/reset";
 
 @import "utils/reusable";
@@ -17,4 +19,4 @@
 @import "components/page-header";
 @import "components/partners";
 @import "components/products";
-@import "components/mobile-menu"
+@import "components/mobile-menu";

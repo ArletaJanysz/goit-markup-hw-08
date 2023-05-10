@@ -36,8 +36,13 @@
 	margin-bottom: 50px;
 	text-align: center;
 	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.67;
+	font-size: 28px;
+	line-height: 1.78;
 	letter-spacing: 0.03em;
 	color: var(--almost-black-color);
+
+	@include desktop {
+		font-size: 36px;
+		line-height: 1.67;
+	}
 }

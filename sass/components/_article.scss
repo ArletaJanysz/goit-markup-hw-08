@@ -1,14 +1,12 @@
 /* ARTICLE */
 
 .article {
-	display: flex;
-	gap: 30px;
-	margin-bottom: -94px;
+	margin-bottom: -30px;
 
 	&__icons {
-		width: 270px;
+		width: 450px;
 		height: 120px;
-		padding: 25px 102.34px;
+		padding: 30px 15px;
 		margin-bottom: 30px;
 		background: var(--article-icon-bg);
 		border-radius: 4px;
@@ -21,6 +19,8 @@
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		color: var(--almost-black-color);
+		text-align: center;
+		margin-bottom: 10px;
 	}
 
 	&__text {
@@ -28,5 +28,12 @@
 		line-height: 1.71;
 		letter-spacing: 0.03em;
 		color: var(--brand-lightgrey-color);
+		margin-bottom: 30px;
+	}
+
+	@include desktop {
+		display: flex;
+		gap: 30px;
+		margin-bottom: -94px;
 	}
 }
