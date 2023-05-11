@@ -2,9 +2,14 @@
 
 .article {
 	margin-bottom: -30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 
 	@include tablet {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		gap: 30px;
 	}
@@ -24,8 +29,9 @@
 
 		@include tablet {
 			width: 354px;
+			align-items: center;
 		}
-		
+
 		@include desktop {
 			width: 270px;
 		}
@@ -52,6 +58,8 @@
 		letter-spacing: 0.03em;
 		color: var(--brand-lightgrey-color);
 		margin-bottom: 30px;
+		text-align: left;
+		max-width: 450px;
 
 		@include tablet {
 			max-width: 354px;
@@ -61,6 +69,4 @@
 			max-width: 354px;
 		}
 	}
-
-
 }
