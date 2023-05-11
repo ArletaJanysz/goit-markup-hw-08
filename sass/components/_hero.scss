@@ -12,11 +12,12 @@
 
 	@include tablet {
 		padding: 118px 0;
+		background-size: cover;
 	}
 
 	@include desktop {
 		padding: 200px 0;
-		background-size: auto;
+		background-size: cover;
 	}
 
 	&__title {

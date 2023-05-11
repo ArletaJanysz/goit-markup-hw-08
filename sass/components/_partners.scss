@@ -8,8 +8,7 @@
 
 	@include desktop {
 		gap: 30px;
-		flex-wrap: nowrap;
-		justify-content: center;
+		// flex-wrap: nowrap;
 	}
 
 	&__logo {
@@ -19,6 +18,11 @@
 		justify-content: center;
 		align-items: center;
 		padding: 16px 52px;
+
+		@include desktop {
+			max-width: 170px;
+			padding: 16px 32px;
+		}
 
 		&:is(:hover, :focus) {
 			border-color: var(--active-color);

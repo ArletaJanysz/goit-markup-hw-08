@@ -5,12 +5,9 @@
 		padding: 10px 0;
 		gap: 93px;
 
-		// @include tablet {
-		// 	padding: 21px 0 15px;
-		// }
-		// @include desktop {
-		// 	padding: 24px 0 25px;
-		// }
+		@include desktop {
+			padding: 24px 0 25px;
+		}
 	}
 
 	&__container {
@@ -18,13 +15,10 @@
 		align-items: center;
 		justify-content: space-between;
 
-		// @include tablet {
-		// 	justify-content: space-between;
-		// }
-
-		// @include desktop {
-		// 	justify-content: space-between;
-		// }
+		@include desktop {
+			justify-content: center;
+			gap: 93px;
+		}
 	}
 
 	&__menu {
@@ -33,13 +27,10 @@
 		@include tablet {
 			display: flex;
 		}
-		// 	gap: 101px;
-		// }
 
-		// @include desktop {
-		// 	display: flex;
-		// 	// }
-		// }
+		@include desktop {
+			display: flex;
+		}
 
 		.nav {
 			display: flex;
@@ -47,10 +38,6 @@
 			font-size: 14px;
 			line-height: 1.14;
 			letter-spacing: 0.02em;
-
-			@include tablet {
-				flex-direction: row;
-			}
 		}
 
 		&__list {
@@ -60,6 +47,10 @@
 			text-decoration: none;
 			color: var(--brand-black-color);
 			margin-left: 83px;
+
+			@include desktop {
+				margin-left: 93px;
+			}
 		}
 
 		&__link {

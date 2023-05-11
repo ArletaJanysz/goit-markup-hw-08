@@ -18,6 +18,7 @@
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: unset;
+			text-align: left;
 		}
 	}
 }
@@ -32,10 +33,15 @@
 	letter-spacing: 0.03em;
 	margin-top: 20px;
 
+	@include desktop {
+		gap: 9px;
+	}
+
 	&-link {
 		text-decoration: none;
 		color: var(--foot-link-color);
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 		&:is(:hover, :focus) {
 			color: var(--active-color);
 		}
@@ -64,7 +70,7 @@
 
 		@include desktop {
 			margin-top: 12px;
-			margin-bottom: 12px;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -95,10 +101,4 @@
 			}
 		}
 	}
-}
-
-// logo--footer
-.logo--footer {
-	display: flex;
-	justify-content: center;
 }
