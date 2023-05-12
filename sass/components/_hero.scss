@@ -8,7 +8,6 @@
 	background-size: cover;
 	text-align: center;
 	padding: 118px 0;
-	// max-height: 400px;
 
 	@include tablet {
 		padding: 118px 0;
@@ -34,13 +33,12 @@
 		@include tablet {
 			font-size: 26px;
 			line-height: 1.615;
-			padding: 0 185px;
 		}
 
 		@include desktop {
 			padding: 0 252px;
 			font-size: 44px;
-			line-height: 1.3636;
+			line-height: 1.364;
 		}
 	}
 
@@ -55,14 +53,6 @@
 		padding: 10px 41px 10px 42px;
 		font-family: "Roboto", sans-serif;
 		cursor: pointer;
-
-		@include tablet {
-			margin-bottom: 118px;
-		}
-
-		@include desktop {
-			margin-bottom: 200px;
-		}
 	}
 }
 
@@ -77,17 +67,5 @@
 				rgba(47, 48, 58, 0.4)
 			),
 			url(../images/hero_work_in_office@2x.jpg);
-	}
-}
-
-@media (min-device-pixel-ratio: 3),
-	(min-resolution: 288dpi),
-	(min-resolution: 3dppx) {
-	.hero {
-		background-image: linear-gradient(
-				rgba(47, 48, 58, 0.4),
-				rgba(47, 48, 58, 0.4)
-			),
-			url(../images/hero_work_in_office@3x.jpg);
 	}
 }

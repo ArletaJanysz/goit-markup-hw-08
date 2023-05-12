@@ -1,6 +1,9 @@
 /* NEWSLETTER */
 
 .newsletter {
+	flex-grow: 1;
+	
+
 	&__header {
 		display: flex;
 		justify-content: center;
@@ -11,6 +14,7 @@
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		margin: 60px 0 20px;
+		
 
 		@include desktop {
 			justify-content: unset;
@@ -22,6 +26,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		width: 100%;
+		
 
 		@include desktop {
 			flex-direction: row;
@@ -30,17 +36,18 @@
 	}
 
 	&__input {
-		padding: 15px 387px 15px 16px;
+		padding: 15px 16px 15px 16px;
 		color: var(--brand-white-color);
 		background-color: transparent;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 		border-radius: 4px;
 		max-width: 450px;
+		width: 100%;
+		margin: 0 auto;
 
 		@include desktop {
 			max-width: 358px;
-			padding: 15px 295px 15px 16px;
 		}
 	}
 

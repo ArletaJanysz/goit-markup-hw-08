@@ -19,23 +19,26 @@
 		flex-wrap: nowrap;
 	}
 
-	&__icons {
-		width: 450px;
-		height: 120px;
+	&__item {
 		padding: 30px 15px;
 		margin-bottom: 30px;
 		background: var(--article-icon-bg);
 		border-radius: 4px;
 
+		max-width: 450px;
+		width: 100%;
+
 		@include tablet {
-			width: 354px;
+			max-width: 354px;
 			align-items: center;
 		}
 
 		@include desktop {
-			width: 270px;
+			max-width: 270px;
 		}
 	}
+
+
 
 	&__title {
 		font-weight: 700;
