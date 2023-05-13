@@ -25,36 +25,98 @@
 				<a class="logo" href="./index.html"
 					>Web<span style="color: black">Studio</span></a
 				>
-				<nav class="nav">
-					<ul class="nav__list">
-						<li>
-							<a class="nav__link" href="./index.html">Agencja</a>
-						</li>
-						<li>
-							<a class="nav__link nav__link--active" href="./portfolio.html"
-								>Portfolio</a
-							>
-						</li>
-						<li>
-							<a class="nav__link" href="">Kontakty</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="head__menu">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li>
+								<a class="nav__link nav__link--active" href="./index.html"
+									>Agencja</a
+								>
+							</li>
+							<li>
+								<a class="nav__link" href="./portfolio.html">Portfolio</a>
+							</li>
+							<li>
+								<a class="nav__link" href="">Kontakty</a>
+							</li>
+						</ul>
+					</nav>
 
-				<div class="container contact">
-					<a class="contact__link" href="mailto:info@devstudio.com"
-						><svg width="16" height="16">
-							<use href="./images/icons.svg#icon-envelope"></use>
-						</svg>
-						info@devstudio.com</a
-					>
-					<a class="contact__link" href="tel:+48111111111"
-						><svg width="16" height="16">
-							<use href="./images/icons.svg#icon-smartphone"></use>
-						</svg>
-						+48 111 111 111</a
-					>
+					<div class="contact">
+						<a class="contact__link" href="mailto:info@devstudio.com"
+							><svg width="16" height="16">
+								<use href="./images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com</a
+						>
+						<a class="contact__link" href="tel:+48111111111"
+							><svg width="16" height="16">
+								<use href="./images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+48 111 111 111</a
+						>
+					</div>
 				</div>
+
+				<!-- BURGER MOBILE -->
+				<div class="burger__mobile-hide">
+					<button
+						class="menu__toggle js-open-menu"
+						aria-expanded="false"
+						aria-controls="mobile-menu">
+						<svg class="menu__icon" width="40" height="40">
+							<use href="./images/icons.svg#icon-menu_40px"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="menu__container js-menu-container" id="mobile-menu">
+				<button class="menu__toggle js-close-menu">
+					<svg class="menu__icon--close" width="18.67" height="18.67">
+						<use href="images/icons.svg#icon-close-black"></use>
+					</svg>
+				</button>
+
+				<ul class="menu">
+					<li class="menu__nav--item">
+						<a href="index.html" class="menu__nav">Agencja</a>
+					</li>
+					<li class="menu__nav--item">
+						<a href="portfolio.html" class="menu__nav">Portfolio</a>
+					</li>
+					<li class="menu__nav--item">
+						<a href="#" class="menu__nav">Kontakt</a>
+					</li>
+				</ul>
+
+				<!--tel & mail-->
+				<span class="menu__contacts">
+					<a class="menu__contact menu__contact-link" href="tel:+48111111111"
+						>+48 111 111 111</a
+					><a
+						class="menu__contact menu__contact-link"
+						href="mailto:info@devstudio.com"
+						>info@devstudio.com</a
+					>
+				</span>
+
+				<!--socials-->
+
+				<ul class="menu__socials">
+					<li class="menu__socials menu__socials--item">
+						<a class="menu__socials menu__socials--link" href="#">Instagram</a>
+					</li>
+					<li class="menu__socials menu__socials--item">
+						<a class="menu__socials menu__socials--link" href="#">Twitter</a>
+					</li>
+					<li class="menu__socials menu__socials--item">
+						<a class="menu__socials menu__socials--link" href="#">Facebook</a>
+					</li>
+					<li class="menu__socials menu__socials--item">
+						<a class="menu__socials menu__socials--link" href="#">LinkedIn</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 
@@ -372,6 +434,13 @@
 			</div>
 		</footer>
 
-		<script src="./js/mobile-menu.js"></script>
+		<script src="./js/modal.js"></script>
+		<!-- script for mobile menu -->
+		<script defer src="./js/mobile-menu.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"></script>
 	</body>
 </html>

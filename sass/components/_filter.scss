@@ -1,13 +1,28 @@
 .filter {
-	margin-bottom: -94px;
+	margin-bottom: -60px;
+
+	@include desktop {
+		margin-bottom: -94px;
+	}
 
 	&__btns {
 		background: var(--brand-white-color);
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
 		gap: 8px;
-		justify-content: center;
+		justify-content: flex-start;
 		margin-bottom: -44px;
+
+		@include tablet {
+			justify-content: center;
+		}
+
+		@include desktop {
+			justify-content: center;
+		}
 	}
+
 	&__btn {
 		cursor: pointer;
 		font-family: "Roboto", sans-serif;
