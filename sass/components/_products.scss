@@ -1,27 +1,28 @@
-.products {
+.product {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
 	//  width: 315px;
-	
 
 	@include tablet {
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: left;
 	}
 
-	&__box {
+	&__item {
 		background: var(--bg-color);
-		max-width: 370px;
+
 		text-align: left;
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		max-width: 315px;
-		
+		max-height: 404px;
 
 		@include tablet {
 			max-width: 354px;
+			max-height: 440px;
 		}
 
 		@include desktop {
@@ -76,6 +77,7 @@
 		line-height: 2;
 		letter-spacing: 0.06em;
 		color: var(--card-title-color);
+		white-space: nowrap;
 	}
 	&__subtitle {
 		display: block;
