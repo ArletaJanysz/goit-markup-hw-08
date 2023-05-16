@@ -78,13 +78,13 @@
 		display: flex;
 		flex-direction: column;
 		gap: 32px;
-		padding: 8px;
 		margin-top: 302px;
 		margin-bottom: 64px;
 	}
 
 	&__contact {
 		text-decoration: none;
+		display: flex;
 
 		&-link {
 			gap: 10px;
@@ -93,6 +93,8 @@
 			line-height: 1.43;
 			color: var(--brand-lightgrey-color);
 			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			flex-wrap: nowrap;
+			min-width: 267px;
 
 			&:hover,
 			&:focus {
@@ -108,6 +110,7 @@
 	&__socials {
 		display: flex;
 		justify-content: center;
+		max-width: 357px;
 
 		&--item {
 			border-right: 1px solid rgba(33, 33, 33, 0.2);

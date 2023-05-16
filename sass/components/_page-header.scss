@@ -28,7 +28,6 @@
 
 		@include desktop {
 			display: flex;
-			gap: 371px;
 		}
 	}
 }
@@ -51,6 +50,11 @@
 		@include tablet {
 			gap: 60px;
 			flex-direction: row;
+		}
+
+		@include desktop {
+			margin-left: 93px;
+			margin-right: 300px;
 		}
 	}
 
@@ -82,7 +86,7 @@
 				}
 
 				@include desktop {
-					top: 51px;
+					top: 46px;
 				}
 			}
 		}
@@ -97,6 +101,12 @@
 		flex-direction: column;
 		margin-left: 101px;
 		gap: 10px;
+	}
+
+	@include desktop {
+		flex-direction: row;
+		font-size: 14px;
+		line-height: 1.14px;
 	}
 
 	&__link {
