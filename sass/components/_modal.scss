@@ -5,8 +5,8 @@
 	padding: 93px 15px;
 	justify-content: center;
 	position: fixed;
-	// max-height: 609px;
-	// max-width: 450px;
+	// min-height: 609px;
+	// min-width: 320px;
 	inset: 0;
 
 	@include tablet {
@@ -36,7 +36,7 @@
 	position: relative;
 	min-width: 320px;
 	max-width: 450px;
-	min-height: 300px;
+	min-height: 609px;
 	max-height: 609px;
 	background-color: var(--brand-white-color);
 	border-radius: 4px;
