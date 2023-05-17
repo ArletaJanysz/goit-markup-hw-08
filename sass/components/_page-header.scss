@@ -60,8 +60,8 @@
 		// margin-left: 93px;
 
 		@include tablet {
-			gap: 60px;
 			flex-direction: row;
+			margin-left: 83px;
 		}
 
 		@include desktop {
